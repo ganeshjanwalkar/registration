@@ -1,0 +1,522 @@
+
+/* =========================
+   Global Style
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Arial, sans-serif;
+}
+
+
+body{
+
+    background:linear-gradient(135deg,#575757,#764ba2);
+
+    min-height:100vh;
+
+    padding:20px;
+
+}
+
+
+/* =========================
+   Registration Container
+========================= */
+
+.container{
+
+    width:100%;
+
+    max-width:650px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+
+}
+
+
+
+h2{
+
+    text-align:center;
+
+    color:#333;
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* =========================
+   Form Style
+========================= */
+
+
+label{
+
+    display:block;
+
+    font-weight:600;
+
+    margin-top:12px;
+
+    color:#333;
+
+}
+
+
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:6px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:0.3s;
+
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    border-color:#667eea;
+
+    box-shadow:0 0 6px rgba(102,126,234,0.5);
+
+}
+
+
+
+/* =========================
+   Radio & Skills
+========================= */
+
+
+.radio-group,
+.skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:10px;
+
+}
+
+
+
+.radio-group label,
+.skills label{
+
+    background:#f1f1f1;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    font-weight:normal;
+
+    cursor:pointer;
+
+}
+
+
+
+input[type="radio"],
+input[type="checkbox"]{
+
+    width:auto;
+
+    margin-right:5px;
+
+}
+
+
+
+/* =========================
+   Buttons
+========================= */
+
+
+button{
+
+    width:100%;
+
+    padding:13px;
+
+    margin-top:20px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#3a3a3a;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+button:hover{
+
+    background:#4b5fd1;
+
+}
+
+
+
+.cancel{
+
+    background:#e14c07;
+
+}
+
+
+
+.cancel:hover{
+
+    background:#a71d2a;
+
+}
+
+
+
+/* =========================
+   Search Box
+========================= */
+
+
+.search-container{
+
+    max-width:1000px;
+
+    margin:30px auto;
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+
+
+.search-container input{
+
+    flex:1;
+
+}
+
+
+
+.search-container button{
+
+    width:150px;
+
+    margin-top:0;
+
+}
+
+
+
+
+
+/* =========================
+   Table Style
+========================= */
+
+
+.table-container{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    margin-top:20px;
+
+}
+
+
+
+table{
+
+    width:100%;
+
+    min-width:1300px;
+
+    background:white;
+
+    border-collapse:collapse;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+
+}
+
+
+
+th,
+td{
+
+    border:1px solid #ddd;
+
+    padding:12px;
+
+    text-align:center;
+
+}
+
+
+
+th{
+
+    background:#667eea;
+
+    color:white;
+
+}
+
+
+
+tr:nth-child(even){
+
+    background:#f8f8f8;
+
+}
+
+
+
+tr:hover{
+
+    background:#eeeeff;
+
+}
+
+
+
+/* =========================
+   Student Image
+========================= */
+
+
+img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+
+
+
+/* =========================
+   Action Buttons
+========================= */
+
+
+.view,
+.edit,
+.delete{
+
+
+    width:auto;
+
+    padding:7px 12px;
+
+    margin:3px;
+
+    border-radius:5px;
+
+    color:white;
+
+    font-size:14px;
+
+}
+
+
+
+.view{
+
+    background:#28a745;
+
+}
+
+
+
+.edit{
+
+    background:#ff9800;
+
+}
+
+
+
+.delete{
+
+    background:#dc3545;
+
+}
+
+
+
+.view:hover{
+
+    background:#218838;
+
+}
+
+
+
+.edit:hover{
+
+    background:#d98200;
+
+}
+
+
+
+.delete:hover{
+
+    background:#b52a37;
+
+}
+
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+
+@media(max-width:768px){
+
+
+    body{
+
+        padding:10px;
+
+    }
+
+
+    .container{
+
+        padding:20px;
+
+    }
+
+
+
+    h2{
+
+        font-size:22px;
+
+    }
+
+
+
+    .search-container{
+
+        flex-direction:column;
+
+    }
+
+
+
+    .search-container button{
+
+        width:100%;
+
+    }
+
+
+
+    table{
+
+        font-size:13px;
+
+    }
+
+
+
+    img{
+
+        width:45px;
+
+        height:45px;
+
+    }
+
+}
+
+
+
+
+@media(max-width:480px){
+
+
+    .skills,
+    .radio-group{
+
+        flex-direction:column;
+
+    }
+
+
+
+    input,
+    select,
+    textarea{
+
+        font-size:14px;
+
+    }
+
+
+    button{
+
+        font-size:14px;
+
+    }
+
+}

@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Professional Student Registration System</title>
+
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+    <h2 id="formTitle">Student Registration Form</h2>
+
+
+    <form id="studentForm">
+
+
+        <label>Student ID</label>
+        <input 
+            type="text" 
+            id="sid"
+            placeholder="Enter Student ID"
+            required>
+
+
+        <label>Student Name</label>
+        <input 
+            type="text" 
+            id="name"
+            placeholder="Enter Student Name"
+            required>
+
+
+        <label>Email</label>
+        <input 
+            type="email"
+            id="email"
+            placeholder="Enter Email"
+            required>
+
+
+
+        <label>Gender</label>
+
+        <div class="radio-group">
+
+            <label>
+                <input 
+                type="radio" 
+                name="gender" 
+                value="Male"
+                required>
+                Male
+            </label>
+
+
+            <label>
+                <input 
+                type="radio" 
+                name="gender" 
+                value="Female">
+                Female
+            </label>
+
+        </div>
+
+
+
+
+        <label>Course</label>
+
+        <select id="course" required>
+
+            <option value="">Select Course</option>
+            <option>BCA</option>
+            <option>BSc</option>
+            <option>BCom</option>
+            <option>B.Tech</option>
+            <option>MCA</option>
+
+        </select>
+
+
+
+
+        <label>Skills</label>
+
+
+        <div class="skills">
+
+            <label>
+                <input type="checkbox" value="HTML">
+                HTML
+            </label>
+
+
+            <label>
+                <input type="checkbox" value="CSS">
+                CSS
+            </label>
+
+
+            <label>
+                <input type="checkbox" value="JavaScript">
+                JavaScript
+            </label>
+
+
+            <label>
+                <input type="checkbox" value="Python">
+                Python
+            </label>
+
+
+            <label>
+                <input type="checkbox" value="Java">
+                Java
+            </label>
+
+        </div>
+
+
+
+
+
+        <label>Mobile Number</label>
+
+        <input 
+            type="text"
+            id="phone"
+            maxlength="10"
+            placeholder="Enter 10 digit mobile number"
+            required>
+
+
+
+
+        <label>Pincode</label>
+
+        <input 
+            type="text"
+            id="pincode"
+            maxlength="6"
+            placeholder="Enter 6 digit pincode"
+            required>
+
+
+
+
+        <label>City</label>
+
+        <input 
+            type="text"
+            id="city"
+            placeholder="Enter City"
+            required>
+
+
+
+
+        <label>Address</label>
+
+        <textarea 
+            id="address"
+            rows="3"
+            placeholder="Enter Address">
+        </textarea>
+
+
+
+
+
+        <label>Student Image</label>
+
+        <input 
+            type="file"
+            id="image"
+            accept="image/*">
+
+
+
+
+
+        <button type="submit" id="submitBtn">
+            Register Student
+        </button>
+
+
+        <button 
+            type="button" 
+            id="cancelBtn"
+            class="cancel">
+            Cancel Edit
+        </button>
+
+
+    </form>
+
+
+</div>
+
+
+
+
+
+<!-- Search Section -->
+
+<div class="search-container">
+
+
+    <input 
+        type="text"
+        id="search"
+        placeholder="Search by Student ID or Name">
+
+
+    <button id="searchBtn">
+        Search
+    </button>
+
+
+</div>
+
+
+
+
+
+
+<!-- Student Table -->
+
+
+<div class="table-container">
+
+
+<table id="studentTable">
+
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Image</th>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Gender</th>
+
+<th>Course</th>
+
+<th>Skills</th>
+
+<th>Phone</th>
+
+<th>Pincode</th>
+
+<th>City</th>
+
+<th>Address</th>
+
+<th>Action</th>
+
+
+</tr>
+
+</thead>
+
+
+
+<tbody>
+
+</tbody>
+
+
+
+</table>
+
+
+</div>
+
+
+
+
+<script src="script3.js"></script>
+
+
+</body>
+
+</html>
